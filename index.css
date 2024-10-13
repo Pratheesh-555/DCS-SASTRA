@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.one{
+    background-image: url(hero_bg.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height:  100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.logo h1 {
+    font-size: 24px;
+    color: #ff9800;
+    animation: bounce 2s  infinite alternate;
+    animation-delay: 1s;
+}
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+nav ul li:hover{
+    text-decoration-color: #ff9800;
+    text-decoration-line: underline;
+}
+.auth{
+    display: flex;
+    gap: 10px;
+}
+.auth a{
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #ff9800;
+    font-weight: bold;
+    padding: 5px 5px;
+    color: #fff;
+}
+.auth a:hover{
+    background-color: #e57100;
+}
+.hero-page{
+    text-align: center;
+    margin: auto;
+}
+.hero-page p,h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.search-form{
+    padding: 20px;
+    margin: 0 15%;
+    border-radius: 10px;
+}
+.search-form ul li{
+    display: flex;
+
+}
+.search-form ul{
+    display: flex;
+    justify-content: space-between;
+}
+.search-form ul a{
+    color: #fff;
+}
+
+.explore h2{
+    margin: 2% 5%;
+    text-align: left;
+    margin: 2%  15%;
+}
+.card{
+    display: flex;
+    margin: 2%  15%;
+
+    justify-content: space-between;
+}
+.card  img{
+    height: 250px;
+    width: 200px;
+}
+.card-one, .card-two, .card-three, .card-four{     
+    display: inline-block;
+    width: 250px;
+    transition: 200ms;
+}
+#card:hover{
+    scale: 1.05;
+    
+}
+.explore span{
+    color: #ff9800;
+
+    font-weight: bold;
+
+}
+.explore h3{
+    margin: 10px 0;
+    font-size: medium;
+}
+
+.welcome{
+    padding: 50px;
+    margin: 0 15%;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+}
+.welcome h4,li{
+    color: #8a8a8af6;
+}
+.welcome-content {
+    display: inline;
+   left: 2000px;
+}
+
+.welcome ul li span{
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font: bold 2.2em sans-serif;
+    color: #ff9800;
+}
+.welcome ul li{
+    padding: 40px 10px; 
+    display: inline-block;
+}
+.welcome ul{
+    text-align: left;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.special-offers{
+    background-color:#ebad5b;
+    height: 250px;
+}
+
+.special-offers-content{
+    background-color: #f0ab8f;
+    margin: 0 10%;
+    transform: translateY(10%);
+    padding: 15px;
+    height: 200px;
+    width: 30em;
+    line-height:1.5;
+    border-radius: 25px;
+    text-align: center; 
+   
+}
+
+.special-offers button{
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 30px;
+    border: none;
+    background-color: #ff9800;
+    font-weight: bold;
+    padding: 5px 5px;
+    color: #fff;
+}
+
+.special-offers img{   
+    position: relative; 
+    height: 300px;
+    width: 200px;
+    left: 80%;
+    bottom: 100%;
+}
+
+.travel{
+    padding: 10px;
+    margin: auto;
+}
+.travel-content1,  .travel-content2, .travel-content3, .travel-content4 { 
+    padding: 30px;
+    margin:0 30px;
+    display: inline-block;
+}
+.box{
+    line-height: 1.5;
+    height: auto;
+    width: 200px;
+}
+.travel img{
+    height: 250px;
+    width: 200px;
+}
+
+.booking-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(90deg, rgba(255,193,110,1) 0%, rgba(247,143,167,1) 100%);
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding: 30px;
+    width: 45%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-row input,
+.form-row select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.form-row input::placeholder,
+.form-row select::placeholder {
+    color: #b1b0b0;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    background-color: #ff8300;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #e57100;
+}
+
+.bike-image {
+    width: 50%;
+}
+
+.bike-image img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .booking-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .form-container, .bike-image {
+        width: 100%;
+    }
+
+    .bike-image img {
+        margin-top: 20px;
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.package-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.package-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 500ms;
+}
+
+.package-card:hover{
+    scale: 1.05;
+    
+}
+
+.package-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.package-card-content {
+    padding: 20px;
+}
+
+.package-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.package-price {
+    color: #ff8300;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.package-features {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.package-features p {
+    margin: 0;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.package-features p img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.book-now-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff8300;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .package-card {
+        width: 48%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .package-card {
+        width: 100%;
+    }
+}
+
+
+.footer {
+    background-color: #313131;
+    color: #fff;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-logo img {
+    width: 120px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+.footer .social-icons {
+    display: flex;
+    gap: 10px;
+}
+.footer .social-icons img {
+    width: 40px;
+    height: 40px;
+    background-color: #ff8300;
+    border-radius: 20%;
+    padding: 10px;
+}
+
+.footer .contact-info {
+    display: flex;
+    flex-direction: column;
+}
+.footer .contact-info p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: #ccc;
+}
